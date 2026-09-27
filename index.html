@@ -25,6 +25,7 @@
         </header>
 
         <nav class="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-gray-200 mb-6 -mx-4 px-4 py-2 flex gap-2 overflow-x-auto">
+            <a href="#market-pulse" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📡 Market Pulse</a>
             <a href="#indexes-table" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📊 Indexes</a>
             <a href="#missing-days" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📉 Missing Days</a>
             <a href="#missing-date" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📅 Missing Date</a>
@@ -33,6 +34,52 @@
         
     <div class="mb-6 px-4 py-2 rounded-lg border text-sm font-medium" style="background-color:#F0FDF4;border-color:#86EFAC;color:#166534;">
         ✅ Data freshness normal — 0 trading session(s) behind (weekends excluded), as of 2026-09-25.
+    </div>
+    
+        
+    <div id="market-pulse" class="mb-8 rounded-xl border-2 overflow-hidden shadow-sm"
+         style="border-color:#fca5a5;">
+        <div class="px-5 py-3 flex flex-wrap items-center justify-between gap-3"
+             style="background-color:#fee2e2;">
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-semibold uppercase tracking-wider"
+                      style="color:#991b1b;">Market-Level Signal</span>
+                <span class="px-3 py-1 rounded-full text-sm font-bold"
+                      style="background-color:#991b1b; color:white;">
+                    Market In Correction
+                </span>
+            </div>
+            <div class="text-xs" style="color:#991b1b;">
+                Driven by Nasdaq Composite + S&P 500 &nbsp;|&nbsp; Max Dist+Stall: <b>8</b>
+            </div>
+        </div>
+        <div class="bg-white px-5 py-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+            <div>
+                <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">Nasdaq Composite</div>
+                <div class="font-mono text-lg font-semibold text-gray-900">
+                    Dist+Stall <span class="text-red-600">0</span>
+                    <span class="text-gray-400 text-sm font-normal"> / Pure 0</span>
+                </div>
+                <div class="text-xs text-gray-500 mt-1">Last FTD: 2026-09-17</div>
+            </div>
+            <div>
+                <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">S&P 500</div>
+                <div class="font-mono text-lg font-semibold text-gray-900">
+                    Dist+Stall <span class="text-red-600">8</span>
+                    <span class="text-gray-400 text-sm font-normal"> / Pure 8</span>
+                </div>
+                <div class="text-xs text-gray-500 mt-1">Last FTD: 2026-08-04</div>
+            </div>
+            <div>
+                <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">Tactical Guide</div>
+                <div class="text-gray-700 leading-snug">Heavy institutional liquidation underway (Nasdaq 0 / S&P 8, max 8). Cash position should be highly elevated.</div>
+            </div>
+        </div>
+        <div class="bg-gray-50 px-5 py-2 text-xs text-gray-500 border-t border-gray-100">
+            Per-index counts in the table below use each index’s own Follow-Through cycle.
+            This market-level read uses the higher of the two Dist+Stall counts (Nasdaq / S&P)
+            and the classic IBD thresholds (≤3 Confirmed Uptrend · 4–5 Under Pressure · ≥6 Correction).
+        </div>
     </div>
     
         
