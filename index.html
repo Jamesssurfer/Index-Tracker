@@ -26,6 +26,7 @@
 
         <nav class="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-gray-200 mb-6 -mx-4 px-4 py-2 flex gap-2 overflow-x-auto">
             <a href="#market-pulse" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📡 Market Pulse</a>
+            <a href="#rs-snapshot" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📈 Rel Strength</a>
             <a href="#indexes-table" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📊 Indexes</a>
             <a href="#missing-days" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📉 Missing Days</a>
             <a href="#missing-date" class="px-3 py-1.5 rounded text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 whitespace-nowrap">📅 Missing Date</a>
@@ -79,6 +80,114 @@
             Per-index counts in the table below use each index’s own Follow-Through cycle.
             This market-level read uses the higher of the two Dist+Stall counts (Nasdaq / S&P)
             and the classic IBD thresholds (≤3 Confirmed Uptrend · 4–5 Under Pressure · ≥6 Correction).
+        </div>
+    </div>
+    
+        
+    <div id="rs-snapshot" class="bg-white rounded-lg shadow overflow-hidden mb-8">
+        <div class="px-4 py-3 bg-gray-800 text-white font-semibold text-sm flex flex-wrap items-center justify-between gap-2">
+            <span>📈 Relative Strength Snapshot — All 6 Indexes</span>
+            <span class="text-xs font-normal text-gray-300">Ranked by 20-day performance · Dist = Dist+Stall / Pure</span>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full text-sm">
+                <thead>
+                    <tr class="bg-gray-50 text-xs uppercase tracking-wider text-gray-500 border-b border-gray-200">
+                        <th class="px-3 py-2.5 text-left font-medium">Index</th>
+                        <th class="px-3 py-2.5 text-right font-medium">5D</th>
+                        <th class="px-3 py-2.5 text-right font-medium">10D</th>
+                        <th class="px-3 py-2.5 text-right font-medium">20D</th>
+                        <th class="px-3 py-2.5 text-right font-medium">vs 50 SMA</th>
+                        <th class="px-3 py-2.5 text-right font-medium">Dist / Pure</th>
+                        <th class="px-3 py-2.5 text-right font-medium">Last FTD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#1</span>Nasdaq Com</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+2.06%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+2.79%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;font-weight:600;">+1.99%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+3.44%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-gray-700">0</span>
+                    <span class="text-gray-400 text-xs"> / 0</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-09-17</td>
+            </tr>
+        
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#2</span>S&P 500</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+1.21%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+1.13%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;font-weight:600;">+0.16%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+1.41%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-red-600 font-semibold">8</span>
+                    <span class="text-gray-400 text-xs"> / 8</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-08-04</td>
+            </tr>
+        
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#3</span>QQQE</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+2.86%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+2.50%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;font-weight:600;">-1.79%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#0f7b4e;">+0.99%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-gray-700">2</span>
+                    <span class="text-gray-400 text-xs"> / 2</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-09-21</td>
+            </tr>
+        
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#4</span>NYSE Com</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-0.36%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-1.72%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;font-weight:600;">-2.99%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-1.72%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-red-600 font-semibold">6</span>
+                    <span class="text-gray-400 text-xs"> / 6</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-06-11</td>
+            </tr>
+        
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#5</span>RSP</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-0.18%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-1.38%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;font-weight:600;">-4.31%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-2.39%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-red-600 font-semibold">13</span>
+                    <span class="text-gray-400 text-xs"> / 11</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-08-04</td>
+            </tr>
+        
+            <tr class="border-b border-gray-100 hover:bg-gray-50 text-sm">
+                <td class="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap"><span class="text-xs font-bold text-gray-400 mr-1">#6</span>RUSS 2K</td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-0.80%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-2.29%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;font-weight:600;">-5.86%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono"><span style="color:#cb2431;">-4.07%</span></td>
+                <td class="px-3 py-2.5 text-right font-mono">
+                    <span class="text-red-600 font-semibold">8</span>
+                    <span class="text-gray-400 text-xs"> / 8</span>
+                </td>
+                <td class="px-3 py-2.5 text-right text-xs text-gray-500 font-mono">2026-06-11</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <div class="bg-gray-50 px-4 py-2 text-xs text-gray-500 border-t border-gray-100">
+            Higher 20-day performance + lower Dist count + more recent FTD generally indicates better relative demand.
+            Nasdaq / growth names often lead when their row sits near the top with a clean distribution slate.
         </div>
     </div>
     
